@@ -711,7 +711,7 @@ def synthesize(i_vars, I, I_val, o_vars,
     n_clause = n_hard + n_soft # total number of clauses
     t_f_enc = time.time()
     dt_enc = t_f_enc - t_s_enc # time for encoding
-    print count_int; print n_clause
+    print 'n_var: '+str(count_int); print 'n_clause: '+str(n_clause)
     (f_real, sol_value, dt_maxsat) = call_solver(count_int, mapping, n_soft_const)
 
     return (f_real, (count_int, n_clause), sol_value, dt_enc, dt_maxsat)
