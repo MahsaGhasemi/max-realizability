@@ -63,7 +63,7 @@ def instantiate_robot_nav(scenario):
     # soft constraint:
     pass_no_pass = '('+'ex_1'+' | '+'ex_2'+')'+' & '+'X '+'pass_occ'+' -> '+'X '+'~'+'passa'
 
-    f_hard = [' & '.join([start_point, valid_space, allowed_tra, tour, access, nouse_ret])]
+    f_hard = [' & '.join([start_point, valid_space, allowed_tra, tour, ordering, access, nouse_ret])]
     f_soft = [off_no_pass, lib_no_pass, pass_no_pass]
 
     return (f_hard, f_soft)
