@@ -121,7 +121,7 @@ if __name__ == '__main__':
                                    ('solution value', OrderedDict(sorted(dict_to_str(sol_value_all).iteritems())))
                                    ])
 
-        log_path = "/home/ubuntu/examples/robot_navigation/atva_logs/"+instance_name
+        log_path = "/home/ubuntu/examples/robot_navigation/log_files/"+instance_name
         with open(log_path, 'w') as f_log:
             json.dump(data_log, f_log, indent=4)
 
