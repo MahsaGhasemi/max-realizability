@@ -160,7 +160,8 @@ if __name__ == '__main__':
                                    ('solution value', OrderedDict(sorted(dict_to_str(sol_value_all).iteritems())))
                                    ])
 
-        with open(instance_name, 'w') as f_log:
+        log_path = "/home/ubuntu/examples/load_distribution/atva_final_logs/"+instance_name
+        with open(log_path, 'w') as f_log:
             json.dump(data_log, f_log, indent=4)
 
         print "Instance " + str(inst+1) + " completed." + "\n"
