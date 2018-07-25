@@ -399,7 +399,7 @@ def automata_for_encoding(B_h_UCBA, B_s_UBA, B_s_UCBA, I, I_val, io_vars, T):
     Q_UCBA =  [B_s_UCBA[j][0] for j in range(n_soft_const)]
     Q0_UCBA = [B_s_UCBA[j][1] for j in range(n_soft_const)]
     Q_rej_UCBA = [B_s_UCBA[j][3] for j in range(n_soft_const)]
-    delta_template_UCBA = [B_s_UBA[j][2] for j in range(n_soft_const)]
+    delta_template_UCBA = [B_s_UCBA[j][2] for j in range(n_soft_const)]
 
     (delta_UBA, bad_tra_UBA, delta_UCBA) = gen_ex_del_bad_s(n_soft_const, Q_UBA, delta_template_UBA, delta_bad_all_UBA,
                                                             Q_UCBA, delta_template_UCBA, I, io_vars, T)
